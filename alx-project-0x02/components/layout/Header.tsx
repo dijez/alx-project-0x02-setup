@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 const Header: React.FC = () => {
     return(
         <header>
@@ -5,11 +7,13 @@ const Header: React.FC = () => {
                 HEADER PAGE
             </h1>
             <nav>
-                 <a><li>search bar</li></a>
-            <a><li>sign up</li></a>
-            <a><li>sign in</li></a>
-            <a><li>type of accommodation</li></a>
+                <Link href="/home">HOME</Link><br></br>
+                <Link href="/about">ABOUT</Link>
+                <a><li>sign in</li></a>
+                <a><li>type of accommodation</li></a>
             </nav>
         </header>
     )
 }
+
+export default Header
