@@ -2,7 +2,7 @@ import Card from "@/components/common/Card"
 import PostModal from "@/components/common/PostModal"
 import { PostModalProps } from "@/interfaces"
 import { useState } from "react"
-
+import Header from "@/components/layout/Header"
 
 // const Home: React.FC<PostModalProps> = () =>{
 const Home = () => {
@@ -16,6 +16,7 @@ const Home = () => {
 
     return(
         <div>
+            <Header />
             <h1>HOME PAGE</h1>
             <Card 
             title="WELCOME TO ALX LISTNG APPLICATION"
